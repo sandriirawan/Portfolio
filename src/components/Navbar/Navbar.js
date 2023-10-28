@@ -16,11 +16,18 @@ import {
 import Github from "../../assets/Icon/Github";
 import Linkedin from "../../assets/Icon/Linkedin";
 import UserCard from "./UserCard";
+import { Link as ScrollLink } from "react-scroll";
 
 function NavbarComponent() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "About", "Project", "Github", "Linkedin"];
+  const menuItems = ["Email", "Github", "Linkedin"];
+  const menuLinks = [
+    "mailto:sandriirawan01@gmail.com",
+    "https://github.com/sandriirawan",
+    "https://www.linkedin.com/in/sandriirawann/",
+  ];
+
   return (
     <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="sm:hidden" justify="start">
@@ -29,7 +36,7 @@ function NavbarComponent() {
         />
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="sm:hidden pr-3" justify="left">
         <NavbarBrand>
           <Popover showArrow placement="bottom">
             <PopoverTrigger>
@@ -75,20 +82,40 @@ function NavbarComponent() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4 " justify="center">
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+        <NavbarItem>
+          <ScrollLink
+            to="haha1"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+          >
             Home
-          </Link>
+          </ScrollLink>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <ScrollLink
+            to="haha2"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+            color="foreground"
+          >
             About
-          </Link>
+          </ScrollLink>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Project
-          </Link>
+          <ScrollLink
+            to="haha3"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer"
+            color="foreground"
+          >
+            Projects
+          </ScrollLink>
         </NavbarItem>
       </NavbarContent>
 
@@ -115,7 +142,11 @@ function NavbarComponent() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" color={"foreground"} href="#" size="lg">
+            <Link
+              href={menuLinks[index]}
+              className="no-underline text-black"
+              target="_blank"
+            >
               {item}
             </Link>
           </NavbarMenuItem>
