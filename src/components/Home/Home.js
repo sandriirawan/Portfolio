@@ -1,5 +1,4 @@
 import React from "react";
-import picture from "../../assets/Img/1697140546606.jpg";
 import { Button, Link, Image } from "@nextui-org/react";
 import Resume from "../../assets/Icon/Resume";
 import { motion } from "framer-motion";
@@ -15,8 +14,7 @@ function Home(props) {
       >
         <Image
           isBlurred
-
-          src={picture}
+          src="https://res.cloudinary.com/ddn4pon2w/image/upload/v1698158806/rndtjkrumm68gaibunoo.jpg"
           alt="NextUI Album Cover"
           className="lg:w-96"
         />

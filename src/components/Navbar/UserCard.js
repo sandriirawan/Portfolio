@@ -16,7 +16,7 @@ function UserCard() {
             isBordered
             radius="full"
             size="md"
-            src="https://res.cloudinary.com/ddn4pon2w/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1698158806/rndtjkrumm68gaibunoo.jpg?_s=public-apps"
+            src="https://res.cloudinary.com/ddn4pon2w/image/upload/v1698158806/rndtjkrumm68gaibunoo.jpg"
           />
           <div className="flex flex-col items-start justify-center">
             <h4 className="text-small font-semibold leading-none text-default-600">

@@ -81,19 +81,19 @@ export const useServer = () => {
               id: 9,
               Skill: "PostgreSQL",
               image:
-                "https://res.cloudinary.com/ddn4pon2w/image/upload/v1698364555/png-transparent-postgresql-plain-wordmark-logo-icon-thumbnail_bqbycx.png",
+                "https://res.cloudinary.com/ddn4pon2w/image/upload/v1698590840/pngwing.com_2_axkyua.png",
             },
             {
               id: 10,
               Skill: "MySQL",
               image:
-                "https://res.cloudinary.com/ddn4pon2w/image/upload/v1698364628/png-clipart-mysql-logo-database-web-development-blue-text-thumbnail_atcpp9.png",
+                "https://res.cloudinary.com/ddn4pon2w/image/upload/v1698590899/pngegg_ca3tkd.png",
             },
             {
               id: 11,
               Skill: "Boostrap",
               image:
-                "https://res.cloudinary.com/ddn4pon2w/image/upload/v1698364657/png-clipart-bootstrap-css3-node-js-logo-github-purple-violet_fe2oot.png",
+                "https://res.cloudinary.com/ddn4pon2w/image/upload/v1698590585/Bootstrap_logo.svg_mg67wh.png",
             },
             {
               id: 12,
