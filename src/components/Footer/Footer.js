@@ -7,7 +7,7 @@ import { Link } from "@nextui-org/react";
 function Footer(props) {
   const { data } = props;
   return (
-    <footer className="bg-gray-300 text-black py-5">
+    <footer className="bg-gray-300 text-black py-5 lg:px-24 px-0">
       <div className="container mx-auto flex lg:flex-row lg:justify-between items-center justify-center flex-col">
         <div>
           <h3 className="text-xl font-semibold ">Connect with Me</h3>

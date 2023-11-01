@@ -17,10 +17,10 @@ function Projects(props) {
       <h1 className="text-white text-center lg:text-4xl text-2xl font-custom pb-5">
         My Project
       </h1>
-      <div className="flex flex-wrap justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center lg:w-[50%] w-screen">
         {projects.map((item, index) => (
           <Fade key={index}>
-            <Card className="m-4 lg:w-64 w-60 bg-gray-200">
+            <Card className="m-4 lg:w-64 w-60 bg-gray-100">
               <CardHeader className="pb-0 pt-2 px-4 flex-col items-center ">
                 <h4 className="text-large font-custom">{item.project_name}</h4>
               </CardHeader>
